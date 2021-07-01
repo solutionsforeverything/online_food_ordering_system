@@ -1,0 +1,167 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30 May, 2021, 10:24:14 AM
+    Author     : rosha
+*/
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background: rgba(0,0,0,.8);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 1px;
+  font-size: 17px;
+  width: 16.665%;
+}
+
+.tabcontent h2{
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #d4ac0d   40%, #82e0aa  60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.tabcontent .inputBox{
+    position: relative;
+}
+
+
+
+.tabcontent .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+
+
+.tabcontent .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+.tabcontent .inputBox input:focus ~ label,
+.tabcontent .inputBox input:valid ~ label{
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+
+
+.tabcontent input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(filipp-romanovski-naSJ-jJyqNQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.tabcontent p,a{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color:  #abb2b9;
+}
+
+.three{
+    position: absolute;
+    top: 90%;
+    left: 92%;
+    transform: translate(-50%,-50%);
+    width: 0px;
+    padding: 0px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.three .inputBox{
+    position: relative;
+}
+
+
+
+.three input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.three p,a{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color:  #abb2b9;
+}
